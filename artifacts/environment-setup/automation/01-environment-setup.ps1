@@ -1,3 +1,4 @@
+#Setup Script for Worskhop environment
 $InformationPreference = "Continue"
 
 $IsCloudLabs = Test-Path C:\LabFiles\AzureCreds.ps1;
