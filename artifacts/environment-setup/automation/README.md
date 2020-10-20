@@ -171,3 +171,11 @@ The entire script will take a little over an hour to complete.  Major steps incl
 * Download all data sets and files into the data lake (~15 mins)
 * Execute the setup and execute the SQL pipeline (~30 mins)
 * Execute the Cosmos DB pipeline (~25 mins)
+
+## Check Setup & Final Steps
+
+The Setup may throw some error messages. 
+
+To avoid unessessary costs make sure
+* The SQL pool is scaled back to 500 DWUs and paused if not needed. 
+* All CosmosDB Containers are sclade back to 400 RU/s  
