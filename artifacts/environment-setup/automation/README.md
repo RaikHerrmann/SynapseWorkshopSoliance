@@ -176,7 +176,7 @@ The entire script will take a little over an hour to complete.  Major steps incl
 
 The Setup may throw some error messages. You may need to manually do these changes if the error occours.   
 * Adding current user to SQLPool01
-
+![SQLPool01 Error during user add script](../media/Error_Adding_User_SQLPool01.png)
 
 To avoid unessessary costs make sure
 * The SQL pool is scaled back to 500 DWUs and paused if not needed. 
