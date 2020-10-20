@@ -1,6 +1,8 @@
 #Setup Script for Worskhop environment
 $InformationPreference = "Continue"
 
+Install-Module -Name Az.CosmosDB
+
 $IsCloudLabs = Test-Path C:\LabFiles\AzureCreds.ps1;
 
 if($IsCloudLabs){
@@ -593,7 +595,8 @@ $documentCount = Count-CosmosDbDocuments -SubscriptionId $subscriptionId -Resour
 
 Write-Information "Found $documentCount in Cosmos DB container $($cosmosDbContainer)"
 
-Install-Module -Name Az.CosmosDB
+#do that at the beginning of the script
+#Install-Module -Name Az.CosmosDB
 
 if ($documentCount -ne 100000) 
 {
