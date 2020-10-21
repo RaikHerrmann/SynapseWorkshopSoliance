@@ -149,6 +149,9 @@ When executing the script below, it is important to let the scripts run to compl
     ./03-environment-validate.ps1
     ```
 
+    You may be prompted to confirm the installation of additional AZ CosmosDB modules. Confirm with "y".
+    ![AZ Cosmos DB Commands install confirmation.](../media/Install_AZCosmosDBWarning.png)
+
     You may be prompted to enter the name of your desired Azure Subscription. You can copy and paste the value from the list to select one.
 
     You will also be prompted for the following information for this script:
