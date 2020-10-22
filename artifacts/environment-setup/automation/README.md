@@ -154,7 +154,8 @@ When executing the script below, it is important to let the scripts run to compl
 
     You may be prompted to enter the name of your desired Azure Subscription. You can copy and paste the value from the list to select one.
 
-    **This taken from key vault and will not prompt** You will also be prompted for the following information for this script:
+    **This taken from key vault and will not prompt!** 
+    You will also be prompted for the following information for this script:
 
     | Prompt |
     |--------|
