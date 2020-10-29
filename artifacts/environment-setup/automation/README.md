@@ -144,6 +144,6 @@ The Setup may throw some error messages. You may need to manually do these chang
 
 # Check Existance of the following artifacts: 
 
-See word file: ![SQLPool01 Error during user add script](../media/Deployment%20Log.docx)
+See deployment log file: ![Deployment Log](../media/Deployment%20Log.docx)
 
-https://github.com/RaikHerrmann/SynapseWS/blob/master/Deployment%20Log.docx
+
