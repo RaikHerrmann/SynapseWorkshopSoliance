@@ -138,6 +138,8 @@ The Setup may throw some error messages. You may need to manually do these chang
 * Adding current user to SQLPool01
 ![SQLPool01 Error during user add script](../media/Error_Adding_User_SQLPool01.png)
 
+* Add users to the Synapse Workspace as required and add permissions to the SQLPool as required 
+
 # To avoid unessessary costs make sure
 * The SQL pool is scaled back to 500 DWUs and paused if not needed. 
 * All CosmosDB Containers are sclade back to 400 RU/s  
