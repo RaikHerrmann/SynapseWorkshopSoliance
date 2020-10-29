@@ -41,7 +41,14 @@
 
     > **Note**: You may experience a deployment step failing in regards to Role Assignment. This error may safely be ignored.
 
-## Cloud Shell Deployment
+## Cloud Shell Deployment of contents
+
+## Preflight Infos
+
+1. Make sure to run this command in powershell version of cloud shell.
+2. You might receive errors for assigning permissions during setup. Note them down and manually assign permissions after the script finishes.
+3. The script usually runs for about 1,5 hrs - make sure  Azure Cloud shell does not time out. SQL Pool piplines run for about 20 minutes. If the script runs out during execution of a pipeline, scale up the SQL pool in the 01-environment-setup.ps1 script to a higher sku (currently 3000DWUs line 272ff). You can rerun the script - it may throwh some errors as some artifacts already exist. 
+
 
 ### Task 1: Download artifacts
 
@@ -122,7 +129,7 @@ The entire script will take a little over an hour to complete.  Major steps incl
 
 * Configure Synapse resources
 * Download all data sets and files into the data lake (~15 mins)
-* Execute the setup and execute the SQL pipeline (~30 mins)
+* Execute the setup and execute the SQL pipeline (~2 times 40 mins)
 * Execute the Cosmos DB pipeline (~25 mins)
 
 ## Check Setup & Final Steps
@@ -131,6 +138,10 @@ The Setup may throw some error messages. You may need to manually do these chang
 * Adding current user to SQLPool01
 ![SQLPool01 Error during user add script](../media/Error_Adding_User_SQLPool01.png)
 
-To avoid unessessary costs make sure
+# To avoid unessessary costs make sure
 * The SQL pool is scaled back to 500 DWUs and paused if not needed. 
 * All CosmosDB Containers are sclade back to 400 RU/s  
+
+# Check Existance of the following artifacts: 
+
+See word file: https://github.com/RaikHerrmann/SynapseWS/blob/master/Deployment%20Log.docx
