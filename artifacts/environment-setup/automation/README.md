@@ -93,7 +93,7 @@ When executing the script below, it is important to let the scripts run to compl
 1. In the Cloud Shell, change the current directory to the **automation** folder of the cloned repository by executing the following:
 
     ```PowerShell
-    #git clone https://github.com/RaikHerrmann/SynapseWS.git synapse-ws-L400
+    #git clone https://github.com/RaikHerrmann/SynapseWorkshopSoliance.git synapse-ws-L400
 
     cd './synapse-ws-L400/artifacts/environment-setup/automation'
     ```
