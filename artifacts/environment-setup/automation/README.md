@@ -102,8 +102,14 @@ When executing the script below, it is important to let the scripts run to compl
 
     ```PowerShell
     ./01-environment-setup.ps1
+    ```
+
+3. **Optionally** execute **./03-environment-validate.ps1** script by executing the following command:
+
+    ```PowerShell
     ./03-environment-validate.ps1
     ```
+
 
     You may be prompted to confirm the installation of additional AZ CosmosDB modules. Confirm with "y".
     ![AZ Cosmos DB Commands install confirmation.](../media/Install_AZCosmosDBWarning.png)
