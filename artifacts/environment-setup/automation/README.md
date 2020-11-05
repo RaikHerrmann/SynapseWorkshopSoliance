@@ -14,9 +14,8 @@
 
     ![On the new resource screen Resource group is entered as a search term.](../media/bhol_searchmarketplaceresourcegroup.png)
 
-4. Select the **Create** button on the **Resource group** overview page. Deploy to **EAST US**.
-
-5. On the **Create a resource group** screen, select your desired Subscription and Region. For Resource group, enter **Synapse-WS-L400**, then select the **Review + Create** button.
+4. Select the **Create** button on the **Resource group** overview page. 
+5. On the **Create a resource group** screen, select your desired Subscription and Region. For Resource group, enter **Synapse-WS-L400**, then select the **Review + Create** button. Deploy to **EAST US** or **EAST US 2**.
 
     ![The Create a resource group form is displayed populated with Synapse-MCW as the resource group name.](../media/bhol_resourcegroupform.png)
 
@@ -24,7 +23,7 @@
 
 ### Task 2: Create Azure Synapse Analytics workspace
 
-1. Deploy the workspace through the following Azure ARM template (press the button below). Deploy to **EAST US**.:
+1. Deploy the workspace through the following Azure ARM template (press the button below). Deploy to **EAST US** or **EAST US 2**:
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsolliancenet%2Fazure-synapse-analytics-workshop-400%2Fmaster%2Fartifacts%2Fenvironment-setup%2Fautomation%2F00-asa-workspace-core.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png" /></a>
 
@@ -33,7 +32,7 @@
 * **Subscription**: Select your desired subscription for the deployment.
 * **Resource group**: Select the **Synapse-WS-L400** resource group you previously created.
 * **Unique Suffix**: This unique suffix will be used naming resources that will created as part of your deployment.
-* **SQL Administrator Login Password**: Provide a strong password for the SQLPool that will be created as part of your deployment. Your password will be needed during the next steps. Make sure you have your password noted and secured.
+* **SQL Administrator Login Password**: Provide a strong password for the SQLPool that will be created as part of your deployment. Your password will be needed during the next steps. Make sure you have your password noted and secured. Make sure it is super complicated, 12 digits long, special characters, lower and upper case, numbers etc. Otherwhise the deployment may fail.
   
     > **Important**: The `location` field under 'Settings' will list the Azure regions where Azure Synapse Analytics (Preview) is available as of July 2020. This will help you find a region where the service is available without being limited to where the resource group is defined.
 
