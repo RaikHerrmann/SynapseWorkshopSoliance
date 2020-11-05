@@ -6,7 +6,7 @@
 
 1. Log into the [Azure Portal](https://portal.azure.com) using your Azure credentials.
 
-2. On the Azure Portal home screen, select the **+ Create a resource** tile.
+2. On the Azure Portal home screen, select the **+ Create a resource** tile. 
 
     ![A portion of the Azure Portal home screen is displayed with the + Create a resource tile highlighted.](../media/bhol_createaresource.png)
 
@@ -14,7 +14,7 @@
 
     ![On the new resource screen Resource group is entered as a search term.](../media/bhol_searchmarketplaceresourcegroup.png)
 
-4. Select the **Create** button on the **Resource group** overview page.
+4. Select the **Create** button on the **Resource group** overview page. Deploy to **EAST US**.
 
 5. On the **Create a resource group** screen, select your desired Subscription and Region. For Resource group, enter **Synapse-WS-L400**, then select the **Review + Create** button.
 
@@ -24,7 +24,7 @@
 
 ### Task 2: Create Azure Synapse Analytics workspace
 
-1. Deploy the workspace through the following Azure ARM template (press the button below):
+1. Deploy the workspace through the following Azure ARM template (press the button below). Deploy to **EAST US**.:
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsolliancenet%2Fazure-synapse-analytics-workshop-400%2Fmaster%2Fartifacts%2Fenvironment-setup%2Fautomation%2F00-asa-workspace-core.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png" /></a>
 
