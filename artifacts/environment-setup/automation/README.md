@@ -103,13 +103,6 @@ When executing the script below, it is important to let the scripts run to compl
     ./01-environment-setup.ps1
     ```
 
-3. **Optionally** execute **./03-environment-validate.ps1** script by executing the following command:
-
-    ```PowerShell
-    ./03-environment-validate.ps1
-    ```
-
-
     You may be prompted to confirm the installation of additional AZ CosmosDB modules. Confirm with "y".
     ![AZ Cosmos DB Commands install confirmation.](../media/Install_AZCosmosDBWarning.png)
 
@@ -127,6 +120,13 @@ When executing the script below, it is important to let the scripts run to compl
     Select the resource group you selected during Task 3.2. This will make sure automation runs against the correct environment you provisioned in Azure.
 
     ![The Azure Cloud Shell window is displayed with a selection of resource groups the user owns.](../media/setup-resource-group-selection.png)
+
+
+3. **Optionally** execute **./03-environment-validate.ps1** script by executing the following command:
+
+    ```PowerShell
+    ./03-environment-validate.ps1
+    ```
 
 ## Steps & Timing
 
