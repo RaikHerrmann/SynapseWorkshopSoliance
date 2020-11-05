@@ -46,7 +46,7 @@
 
 1. Make sure to run this command in powershell version of cloud shell.
 2. You might receive errors for assigning permissions during setup. Note them down and manually assign permissions after the script finishes.
-3. The script usually runs for about 1,5 hrs - make sure  Azure Cloud shell does not time out. SQL Pool piplines run for about 20 minutes. If the script runs out during execution of a pipeline, scale up the SQL pool in the 01-environment-setup.ps1 script to a higher sku (currently 3000DWUs line 272ff). You can rerun the script - it may throwh some errors as some artifacts already exist. 
+3. The script usually runs for about 1,5 hrs - make sure  Azure Cloud shell does not time out. SQL Pool piplines run for about 20 minutes. If the script runs out during execution of a pipeline, scale up the SQL pool in the 01-environment-setup.ps1 script to a higher sku (currently 5000DWUs line 272ff). You can rerun the script - it may throwh some errors as some artifacts already exist. 
 
 
 ### Task 1: Download artifacts
